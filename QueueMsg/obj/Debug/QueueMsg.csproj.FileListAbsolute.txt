@@ -1,0 +1,8 @@
+D:\GitHub\SimulateDevice\QueueMsg\bin\Debug\QueueMsg.exe.config
+D:\GitHub\SimulateDevice\QueueMsg\bin\Debug\QueueMsg.exe
+D:\GitHub\SimulateDevice\QueueMsg\bin\Debug\QueueMsg.pdb
+D:\GitHub\SimulateDevice\QueueMsg\bin\Debug\Microsoft.ServiceBus.dll
+D:\GitHub\SimulateDevice\QueueMsg\bin\Debug\Microsoft.ServiceBus.xml
+D:\GitHub\SimulateDevice\QueueMsg\obj\Debug\QueueMsg.csprojResolveAssemblyReference.cache
+D:\GitHub\SimulateDevice\QueueMsg\obj\Debug\QueueMsg.exe
+D:\GitHub\SimulateDevice\QueueMsg\obj\Debug\QueueMsg.pdb

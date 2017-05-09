@@ -34,12 +34,42 @@ namespace SimulatedDevice
             Console.ReadLine();
         }
 
+        //private static async void SendDeviceToCloudMessagesAsync()
+        //{
+        //    double minTemperature = 20;
+        //    double minHumidity = 60;
+        //    int count = 0;
+        //    Random rand = new Random();
+
+        //    while (count < 20)
+        //    {
+        //        double currentTemperature = minTemperature + rand.NextDouble() * 15;
+        //        double currentHumidity = minHumidity + rand.NextDouble() * 20;
+
+        //        var telemetryDataPoint = new
+        //        {
+        //            deviceId = "myFirstDevice",
+        //            temperature = currentTemperature,
+        //            humidity = currentHumidity
+        //        };
+        //        var messageString = JsonConvert.SerializeObject(telemetryDataPoint);
+        //        var message = new Message(Encoding.ASCII.GetBytes(messageString));
+        //        message.Properties.Add("temperatureAlert", (currentTemperature > 30) ? "true" : "false");
+
+        //        await deviceClient.SendEventAsync(message);
+        //        Console.WriteLine("{0} > Sending message: {1}", DateTime.Now, messageString);
+
+        //        await Task.Delay(1000);
+        //        count++;
+        //    }
+        //}
+
         private static async void SendDeviceToCloudMessagesAsync()
         {
             double minTemperature = 20;
             double minHumidity = 60;
-            int count = 0;
             Random rand = new Random();
+            int count = 0;
 
             while (count < 20)
             {
@@ -53,11 +83,23 @@ namespace SimulatedDevice
                     humidity = currentHumidity
                 };
                 var messageString = JsonConvert.SerializeObject(telemetryDataPoint);
+                string levelValue;
+
+                if (rand.NextDouble() > 0.7)
+                {
+                    messageString = "This is a critical message";
+                    levelValue = "critical";
+                }
+                else
+                {
+                    levelValue = "normal";
+                }
+
                 var message = new Message(Encoding.ASCII.GetBytes(messageString));
-                message.Properties.Add("temperatureAlert", (currentTemperature > 30) ? "true" : "false");
+                message.Properties.Add("level", levelValue);
 
                 await deviceClient.SendEventAsync(message);
-                Console.WriteLine("{0} > Sending message: {1}", DateTime.Now, messageString);
+                Console.WriteLine("{0} > Sent message: {1}", DateTime.Now, messageString);
 
                 await Task.Delay(1000);
                 count++;

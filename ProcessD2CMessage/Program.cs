@@ -9,9 +9,11 @@ namespace ProcessD2CMessage
 {
     class Program
     {
-        static string connectionString = "HostName=eatoniothub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=+5XRVnVw+3cy1AeZugU4r5iCu6j4VVe6OgVVWpz+ukM=";
-            //"HostName=EatonDevIothub2.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=zeGWxiap/mPuFyew3lIH8ZV+O3MLfUU1CXGp124Lr/U=";
-        //                               "HostName=EatonDevIothub2.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=zeGWxiap/mPuFyew3lIH8ZV+O3MLfUU1CXGp124Lr/U=";
+        static string connectionString = 
+            //"HostName=EatonProdIothub1.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=89BEUp6He/tafUdZXoTehnGR7NYwXCNUexFniGcN4Qc=";
+            //"HostName=eatoniothub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=+5XRVnVw+3cy1AeZugU4r5iCu6j4VVe6OgVVWpz+ukM=";
+            "HostName=EatonDevIothub2.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=zeGWxiap/mPuFyew3lIH8ZV+O3MLfUU1CXGp124Lr/U=";
+            //                               "HostName=EatonDevIothub2.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=zeGWxiap/mPuFyew3lIH8ZV+O3MLfUU1CXGp124Lr/U=";
         static string iotHubD2cEndpoint = "messages/events";
         static EventHubClient eventHubClient;
 
