@@ -1,0 +1,8 @@
+# ignore directory
+.vs/
+CreateDeviceIdentity/bin/
+CreateDeviceIdentity/obj/
+ProcessD2CMessage/bin/
+ProcessD2CMessage/obj/
+SimulatedDevice/bin/
+SimulatedDevice/obj/
