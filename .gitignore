@@ -6,3 +6,7 @@ ProcessD2CMessage/bin/
 ProcessD2CMessage/obj/
 SimulatedDevice/bin/
 SimulatedDevice/obj/
+QueueMsg/bin/
+QueueMsg/obj/
+DequeueMsg/bin/
+DequeueMsg/obj/

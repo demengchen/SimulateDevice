@@ -83,20 +83,20 @@ namespace SimulatedDevice
                     humidity = currentHumidity
                 };
                 var messageString = JsonConvert.SerializeObject(telemetryDataPoint);
-                string levelValue;
+                string type;
 
                 if (rand.NextDouble() > 0.7)
                 {
                     messageString = "This is a critical message";
-                    levelValue = "critical";
+                    type = "dlm";
                 }
                 else
                 {
-                    levelValue = "normal";
+                    type = "telemetry";
                 }
 
                 var message = new Message(Encoding.ASCII.GetBytes(messageString));
-                message.Properties.Add("level", levelValue);
+                message.Properties.Add("api", type);
 
                 await deviceClient.SendEventAsync(message);
                 Console.WriteLine("{0} > Sent message: {1}", DateTime.Now, messageString);

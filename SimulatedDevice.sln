@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatedDevice", "Simulate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueMsg", "QueueMsg\QueueMsg.csproj", "{351D20F4-59AD-4275-91D3-75706DF659A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DequeueMsg", "DequeueMsg\DequeueMsg.csproj", "{85F279C9-3226-44B5-BD20-BAC6A301E564}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{351D20F4-59AD-4275-91D3-75706DF659A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{351D20F4-59AD-4275-91D3-75706DF659A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{351D20F4-59AD-4275-91D3-75706DF659A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
