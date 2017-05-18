@@ -10,3 +10,5 @@ QueueMsg/bin/
 QueueMsg/obj/
 DequeueMsg/bin/
 DequeueMsg/obj/
+SchedulerArmSDKTemplate/bin/
+SchedulerArmSDKTemplate/obj/

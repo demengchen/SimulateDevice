@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueMsg", "QueueMsg\QueueM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DequeueMsg", "DequeueMsg\DequeueMsg.csproj", "{85F279C9-3226-44B5-BD20-BAC6A301E564}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerArmSDKTemplate", "SchedulerArmSDKTemplate\SchedulerArmSDKTemplate.csproj", "{A1B704FD-60D5-4311-A4A8-BE69356D3DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85F279C9-3226-44B5-BD20-BAC6A301E564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B704FD-60D5-4311-A4A8-BE69356D3DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B704FD-60D5-4311-A4A8-BE69356D3DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B704FD-60D5-4311-A4A8-BE69356D3DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B704FD-60D5-4311-A4A8-BE69356D3DFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
